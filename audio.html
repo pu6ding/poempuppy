@@ -1,0 +1,16 @@
+  <script>
+      var should_play=true
+      window.onclick = () => {
+          if (should_play){
+              should_play=!should_play
+              let soundSource = "https://raw.githubusercontent.com/pu6ding/poempuppy/08bc17a61cf55eb740ff81d3ea64d5eb27612e65/%E6%A5%BD%E9%9F%B3%20-%20mosi%20mosi%20(SPOTISAVER).mp3";
+              let sound = new Audio(soundSource);
+              sound.play();
+              sound.onended = () => {
+                  should_play=true
+              }
+          }
+    
+      }
+    
+    </script>
